@@ -9,3 +9,15 @@
 @media(max-width:720px){.brands-filter-row{grid-template-columns:1fr}.brand-card h2{font-size:clamp(25px,7vw,31px)}}
 .solo-filter-row{grid-template-columns:repeat(2,1fr)}.collection-cards .collection-card:last-child:nth-child(odd){grid-column:1/-1;border-right:0;padding-right:0}.collection-card h2{font-size:clamp(28px,3.5vw,56px)}.solo-header h1{font-size:clamp(48px,8.5vw,142px)}.collection-heading{border:1px solid;display:grid;grid-template-columns:170px 1fr 190px;align-items:stretch;margin-bottom:18px}.collection-heading>button,.collection-heading>a{border:0;background:#fff;padding:18px;display:flex;align-items:center;font:9px "Courier New",monospace}.collection-heading>a{justify-content:flex-end}.collection-heading>button:hover,.collection-heading>a:hover{background:var(--blue);color:#fff}.collection-heading>div{padding:18px;border-left:1px solid;border-right:1px solid}.collection-heading span{font:9px "Courier New",monospace}.collection-heading h2{margin:5px 0 0;font:900 clamp(38px,6vw,90px)/.8 "Arial Narrow",Arial,sans-serif;letter-spacing:-.05em}.member-content{padding-top:22px}
 @media(max-width:720px){.solo-filter-row{grid-template-columns:1fr}.solo-header h1{font-size:11.5vw}.collection-heading{grid-template-columns:1fr auto;margin:0 -15px 15px;border-width:0 0 1px}.collection-heading>button{grid-column:1/-1;border-bottom:1px solid}.collection-heading>div{border-left:0;padding:15px}.collection-heading>a{padding:15px}.collection-heading h2{font-size:50px}.member-content{padding-top:0}}
+
+/* Responsive review v2 */
+
+.solo-member-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid;border-left:1px solid}
+.solo-member-grid>button{container-type:inline-size;min-width:0;aspect-ratio:1/1.04;display:flex;flex-direction:column;text-align:left;padding:18px;background:#fff;border:0;border-right:1px solid;border-bottom:1px solid;color:var(--blue)}
+.solo-member-grid>button:hover{background:var(--blue);color:#fff}.solo-member-grid>button>span,.solo-member-grid>button>small{font:9px "Courier New",monospace;overflow-wrap:anywhere}
+.solo-member-grid strong{margin:auto 0;font:900 clamp(18px,16cqw,38px)/1 "Arial Narrow",Arial,sans-serif;letter-spacing:-.04em;overflow-wrap:anywhere;max-width:100%}
+@media(max-width:1050px){.solo-member-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:800px){.solo-member-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.solo-member-grid>button{padding:12px}}
+
+
+.solo-member-grid strong .solo-young-full{font:inherit}.solo-young-mobile{display:none}
+@media(max-width:800px){.solo-young-full{display:none}.solo-member-grid strong .solo-young-mobile{display:block;font:inherit;letter-spacing:inherit}}
